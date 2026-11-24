@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hey…Lelluu🌻</title>
+<!-- Open Graph: use an ABSOLUTE url for og:image once deployed -->
+<meta property="og:title" content="Hey… 🌻">
+<meta property="og:description" content="I made something for you.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="theme-color" content="#FFD9A8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<!-- ACT 0: THE GATE -->
+<section id="gate">
+  <p class="gate-t">Hey <span data-her></span>… I made something for you.</p>
+  <button id="sun" aria-label="Press and hold the sun to open">
+    <svg viewBox="0 0 200 200" aria-hidden="true">
+      <defs><clipPath id="cp"><circle cx="100" cy="100" r="62"/></clipPath></defs>
+      <g class="rays" stroke="#F08C00" stroke-width="5" stroke-linecap="round">
+        <script>document.write([...Array(12)].map((_,i)=>`<line x1="100" y1="12" x2="100" y2="${i%2?24:30}" transform="rotate(${i*30} 100 100)"/>`).join(''))</script>
+      </g>
+      <circle cx="100" cy="100" r="62" fill="#FFF3C4"/>
+      <rect id="fill" x="30" y="170" width="140" height="140" fill="#FFB800" clip-path="url(#cp)"/>
+      <circle cx="100" cy="100" r="62" fill="none" stroke="#3B2A00" stroke-width="4"/>
+      <text x="100" y="116" text-anchor="middle" font-size="44" fill="#FF8A5B">♥</text>
+    </svg>
+  </button>
+  <p class="hand">press &amp; hold the sun</p>
+</section>
+
+<div id="fx" aria-hidden="true"></div>
+<div id="rise" aria-hidden="true"></div>
+<div id="ribbon" aria-hidden="true"><i></i><b>🌞</b></div>
+<button id="music" class="glass" aria-label="Toggle music" hidden><span class="eq"><i></i><i></i><i></i></span></button>
+<div id="counter" class="glass" hidden>Days since we met: <b id="days">65</b></div>
+<div id="bee" aria-hidden="true">🐝</div>
+
+<main id="story" hidden>
+  <!-- ACT 1: HERO -->
+  <section id="hero" class="screen">
+    <button id="heroSun" class="mascot" aria-label="Tap the sun"></button>
+    <p class="hand" id="greet"></p>
+    <h1><span class="hw">A</span> <span class="hw">little</span> <em class="hw">story</em> <span class="hw">about</span> <em class="hw">us.</em> <span class="hw hrt">♥</span></h1>
+    <p class="hand">scroll, slowly 🌻</p>
+  </section>
+
+  <div class="marq" aria-hidden="true"><div><span>you're my sunshine ✦ you're my sunshine ✦ you're my sunshine ✦ you're my sunshine ✦ </span><span>you're my sunshine ✦ you're my sunshine ✦ you're my sunshine ✦ you're my sunshine ✦ </span></div></div>
+  <!-- ACT 2: TIMELINE -->
+  <section id="timeline">
+    <h2 class="sec">Our story</h2>
+    <div id="steps">
+      <svg id="trail" aria-hidden="true"><path id="track" fill="none" stroke="rgba(59,42,0,.2)" stroke-width="3" stroke-dasharray="2 11" stroke-linecap="round"/><path id="trailPath" fill="none" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/></svg>
+      <div id="trailSun" aria-hidden="true">🌞</div>
+    </div>
+  </section>
+
+  <!-- ACT 4: BUILD-UP -->
+  <section id="build">
+    <div class="lines">
+      <p class="bl bl1">Somewhere between <span id="fm"></span> and today…</p>
+      <p class="bl bl2">…you became my sunshine.</p>
+      <p class="bl bl3">So I have a question.</p>
+    </div>
+    <div class="hwrap"><!-- sun sets, then stars draw the heart in the same spot -->
+      <div class="sinksun" aria-hidden="true"></div>
+      <svg id="heart" viewBox="0 0 200 200" aria-hidden="true"><path id="hp" fill="rgba(255,212,59,0)" stroke="#FFD43B" stroke-width="2.5" stroke-linejoin="round"/><g id="hd"></g></svg>
+    </div>
+  </section>
+
+  <!-- ACT 5: THE QUESTION -->
+  <section id="ask" class="screen">
+    <div id="face" aria-hidden="true"></div>
+    <h2><span data-her></span>, will you be my sunshine… <em>forever? 🌻</em></h2>
+    <div class="btns">
+      <button id="yes">Yes 🌻</button>
+      <button id="no" class="glass">No</button>
+    </div>
+  </section>
+
+  <!-- ACT 6: SHE SAID YES -->
+  <section id="cert" class="screen" hidden>
+    <div class="paper">
+      <p class="hand">Officially</p>
+      <h2>Taken.</h2>
+      <p class="names"><span data-her></span> ❤ <span data-me></span></p>
+      <p>Since <b id="today"></b></p>
+      <svg viewBox="0 0 140 56" class="sig" aria-hidden="true"><path id="sigp" d="M5 40 C20 2 32 4 28 30 S46 52 56 20 S82 4 88 36 S112 46 134 14" fill="none" stroke="#3B2A00" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <p class="hand">Signed with love</p>
+      <p id="letter" class="letter"></p>
+    </div>
+    <a id="wa" class="cta" target="_blank" rel="noopener">Tell <span data-me></span> 💌</a>
+    <p class="hand">Our story continues…</p>
+    <footer>Made with love (and too much CSS) by <span data-me></span></footer>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
